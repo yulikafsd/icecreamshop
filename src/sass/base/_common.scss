@@ -1,0 +1,40 @@
+body {
+  @include fontBody;
+  color: $primary-text-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.section {
+  width: 100%;
+  min-width: 320px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include maxMedia($preMob) {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  @include minMedia($mob) {
+    width: 480px;
+  }
+
+  @include minMedia($tab) {
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @include minMedia($desk) {
+    width: 1200px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}

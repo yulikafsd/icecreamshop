@@ -1,7 +1,34 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+
+@import './utils/vars';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './utils/service';
+
+@import './base/reset';
+@import './base/common';
+
+@import './components/to-top-button';
+@import './components/menu-container';
+@import './components/button';
+@import './components/modal';
+@import './components/modal-about';
+@import './components/backdrop';
+@import './components/modal-close';
+@import './components/modal-location';
+
+@import './layout/header';
+@import './layout/menu';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
+// Если будут модалка и форма заказа, раскомментить
+// @import './components/modal';
+// @import './components/modal-button-close';
+// @import './components/order-form';

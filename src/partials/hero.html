@@ -1,0 +1,100 @@
+<section class="section hero">
+  <div class="container hero__box">
+    <div class="hero__circle"></div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/hero-icecream-desktop-x1.png 1x,
+          ./images/hero/hero-icecream-desktop-x2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/hero-icecram-tablet-1x.png 1x,
+          ./images/hero/hero-icecram-tablet-2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/hero-icecream-phone-x1.png 1x,
+          ./images/hero/hero-icecream-phone-x2.png 2x
+        "
+        media="(min-width:480px)"
+      />
+      <img class="hero__pic" src="./images/hero/hero-icecream-desktop-x1.png" alt="человек1" />
+    </picture>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        ice cream made with
+        <span class="hero__title-main">passion</span>
+      </h1>
+      <ul class="hero-list list">
+        <li class="hero-list__item button--red">
+          <a href="#products" class="hero-list__link link">Products</a>
+        </li>
+        <li class="hero-list__item button">
+          <a href="#about" class="hero-list__link hero-list__link--right link"
+            >How it&#8242;s made&#63;</a
+          >
+        </li>
+      </ul>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/hero-milk-desktop-x1.png 1x,
+          ./images/hero/hero-milk-desktop-x2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/hero/hero-milk-tablet-x1.png 1x, ./images/hero/hero-milk-tablet-x2.png 2x"
+        media="(min-width:768px)"
+      />
+      <img class="hero__milk" src="./images/hero/hero-milk-desktop-x1.png" alt="milk" />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/hero-girl-desktop-x1.png 1x,
+          ./images/hero/hero-girl-desktop-x2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/hero/hero-girl-tablet-x1.png 1x, ./images/hero/hero-girl-tablet-x2.png 2x"
+        media="(min-width:768px)"
+      />
+      <img class="hero__girl" src="./images/hero/hero-girl-desktop-x1.png" alt="girl" />
+    </picture>
+    <div class="hero__information">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button type="button" class="hero__bttn">
+        <svg class="arrow-right">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="presentation-list list">
+      <li class="presentation-list__item">
+        <span class="presentation-list__text">
+          <span class="presentation-list__numbers">16</span>
+          cafes
+        </span>
+        <div class="presentation-list__circle"></div>
+      </li>
+      <li class="presentation-list__item">
+        <span class="presentation-list__text">
+          <span class="presentation-list__numbers">23</span>
+          food trucks
+        </span>
+        <div class="presentation-list__circle"></div>
+      </li>
+    </ul>
+  </div>
+</section>

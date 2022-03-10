@@ -1,0 +1,20 @@
+.modal__close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  stroke: $primary-color;
+  background-color: inherit;
+  @include centeredFlex();
+  flex-direction: column;
+  border: none;
+}
+.modal__icon {
+  transition: stroke $main-effect, transform $main-effect;
+  &:focus,
+  &:hover {
+    stroke: $social-icon-bg-color;
+    transform: rotate(180deg);
+  }
+}

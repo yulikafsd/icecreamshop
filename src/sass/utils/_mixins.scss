@@ -1,0 +1,62 @@
+// Centered Flex Mixin
+
+@mixin centeredFlex($type: flex, $align: center, $just: center) {
+  display: $type;
+  align-items: $align;
+  justify-content: $just;
+}
+
+// Fonts Mixins
+
+@mixin fontBody($ff: $dm-sans, $fw: 500, $fs: 12px, $lh: 1.62) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin fontPretitle($ff: $titan-one, $fw: 400, $fs: 18px, $lh: 21 / 18) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-transform: uppercase;
+  color: $secondary-accent-color;
+}
+
+@mixin fontTitle($ff: $titan-one, $fw: 400, $fs: 34px, $lh: 39 / 34, $ls: 0.04em) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+@mixin fontButton($ff: $dm-sans, $fw: 700, $fs: 16px, $lh: 21 / 16) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+// Media mixins
+
+@mixin minMedia($startBreakpoint) {
+  @media screen and (min-width: $startBreakpoint) {
+    @content;
+  }
+}
+
+@mixin maxMedia($finishBreakpoint) {
+  @media screen and (max-width: $finishBreakpoint) {
+    @content;
+  }
+}
+
+@mixin rangeMedia($startBreakpoint, $finishBreakpoint) {
+  @media screen and (min-width: $startBreakpoint) and (max-width: $finishBreakpoint) {
+    @content;
+  }
+}

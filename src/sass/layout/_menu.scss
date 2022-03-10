@@ -1,0 +1,99 @@
+.conteiner-mob {
+  width: 250px;
+  @include minMedia($tab) {
+    width: 100%;
+  }
+}
+
+.mob-menu {
+  z-index: 99;
+  right: 0;
+  position: fixed;
+  padding-top: 60px;
+  width: 250px;
+  height: 100vh;
+  background-color: #e17992;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include minMedia($tab) {
+    width: 40%;
+  }
+  @include minMedia($desk) {
+    display: none;
+  }
+
+  &__close-btn {
+    position: absolute;
+    display: block;
+    margin-right: 0;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  &__close-icon {
+    width: 26px;
+    height: 26px;
+    fill: #ffffff;
+    &:hover,
+    &:focus {
+      fill: #d41443;
+      transition: fill $main-effect;
+    }
+  }
+  &__btn {
+    display: block;
+    min-width: 209px;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 32px;
+    @include minMedia($tab) {
+      min-width: 186px;
+      padding-left: 43px;
+      padding-right: 43px;
+    }
+  }
+  &__btn-icon {
+    width: 6px;
+    height: 10px;
+    margin-left: 15px;
+    fill: none;
+    stroke: $primary-color;
+  }
+
+  &__item {
+    padding-left: 21px;
+    display: block;
+    border-top: 1px solid #e18298;
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+    @include minMedia($tab) {
+      padding-left: 24px;
+    }
+  }
+  &__link {
+    height: 42px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    &:hover,
+    &:focus {
+      color: #d41443;
+      transition: color $main-effect;
+    }
+  }
+}
+.mob-menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
