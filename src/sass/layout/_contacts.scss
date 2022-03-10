@@ -1,0 +1,287 @@
+.contacts {
+  min-width: 320px;
+  padding-top: 43px;
+  padding-bottom: 57px;
+  background-image: linear-gradient(#ffffff 127px, #fff5f6 127px, #fff5f6 1563px);
+  @include minMedia($tab) {
+    padding-top: 59px;
+    padding-bottom: 79px;
+    background-image: linear-gradient(#ffffff 137px, #fff5f6 137px, #fff5f6 807px);
+  }
+  @include minMedia($desk) {
+    padding-top: 66px;
+    padding-bottom: 83px;
+    background-image: url(../images/sectionbg2-1x.png),
+      linear-gradient(#ffffff 168px, #fff5f6 168px, #fff5f6 851px);
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position-y: 168px, 0;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/sectionbg2-2x.png),
+        linear-gradient(#ffffff 168px, #fff5f6 168px, #fff5f6 851px);
+    }
+  }
+}
+
+.contacts-list {
+  @include minMedia($tab) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+  @include minMedia($tab) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  @include minMedia($desk) {
+    margin-right: 30px;
+  }
+}
+.contacts-item {
+  max-width: 220px;
+  background-color: $secondary-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @include minMedia($tab) {
+    width: calc(100% / 3 - 20px);
+    padding: 50px 31px;
+    margin-bottom: 0;
+  }
+  @include minMedia($desk) {
+    max-width: 330px;
+    width: calc(100% / 3 - 30px);
+    padding: 52px 43px;
+  }
+}
+
+.contact-category {
+  width: 80px;
+  height: 16px;
+  @include fontBody($lh: 1.86);
+  letter-spacing: 0.04em;
+  background: #f0d1a5;
+  border-radius: 4px;
+  @include centeredFlex;
+  color: #ffffff;
+  @include minMedia($tab) {
+    @include fontBody($fs: 16px, $lh: 1.86);
+    width: 73px;
+    height: 28px;
+  }
+}
+
+.contact-foodtruck {
+  width: 130px;
+  height: 16px;
+  background: #c2e297;
+  @include minMedia($tab) {
+    width: 138px;
+    height: 28px;
+  }
+}
+
+.contacts-city-name {
+  @include fontBody($lh: 1.86);
+  margin-top: 25px;
+  @include minMedia($tab) {
+    @include fontBody($fs: 14px, $lh: 1.86);
+    margin-top: 30px;
+  }
+  @include minMedia($desk) {
+    @include fontBody($fs: 16px, $lh: 1.86);
+    margin-top: 32px;
+  }
+}
+
+.contacts-descriptions {
+  @include fontBody($lh: 1.5);
+
+  color: #907e82;
+  max-width: 179px;
+  @include minMedia($tab) {
+    @include fontBody($fs: 14px, $lh: 1.66);
+    max-width: 145px;
+  }
+  @include minMedia($desk) {
+    @include fontBody($fs: 16px, $lh: 1.83);
+    max-width: 243px;
+  }
+}
+
+.contacts-schedule-list {
+  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  @include minMedia($tab) {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 157px;
+  }
+  @include minMedia($desk) {
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 234px;
+  }
+}
+
+.contacts-schedule-item {
+  &:first-child {
+    margin-bottom: 10px;
+    @include minMedia($tab) {
+      margin-bottom: 16px;
+    }
+    @include minMedia($desk) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.shedule-work-days,
+.shedule-work-hours {
+  @include fontBody($lh: 1.86);
+  @include minMedia($tab) {
+    @include fontBody($fs: 14px, $lh: 1.86);
+  }
+  @include minMedia($desk) {
+    @include fontBody($fs: 16px, $lh: 1.86);
+  }
+}
+
+.shedule-work-hours {
+  color: #ffa5ba;
+}
+
+.contacts-connect-list {
+  margin-top: 25px;
+  @include minMedia($tab) {
+    margin-top: 30px;
+  }
+  @include minMedia($desk) {
+    margin-top: 32px;
+  }
+}
+
+.contacts-connect-item:first-child {
+  margin-bottom: 4px;
+  @include minMedia($tab) {
+    margin-bottom: 6px;
+  }
+  @include minMedia($desk) {
+    margin-bottom: 8px;
+  }
+}
+.contacts-link-email {
+  @include fontBody($lh: 1.5);
+  color: #907e82;
+  @include minMedia($tab) {
+    @include fontBody($fs: 14px, $lh: 1.83);
+  }
+  @include minMedia($desk) {
+    @include fontBody($fs: 16px, $lh: 1.83);
+  }
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.contacts-link-tel {
+  @include fontBody($lh: 1.5);
+  color: #907e82;
+  @include minMedia($tab) {
+    @include fontBody($fs: 14px, $lh: 1.83);
+  }
+  @include minMedia($desk) {
+    @include fontBody($fs: 16px, $lh: 1.83);
+  }
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.contact-btn-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px;
+  @include minMedia($tab) {
+    margin-top: 81px;
+    flex-direction: row;
+  }
+  @include minMedia($desk) {
+    margin-top: 86px;
+  }
+}
+.location-btn {
+  width: 161px;
+  height: 44px;
+  @include fontButton;
+  color: $secondary-color;
+  background: $primary-color;
+  border-radius: 22px;
+  border: 2px solid #ffffff;
+  margin-bottom: 10px;
+  @include minMedia($tab) {
+    margin-bottom: 0;
+    margin-right: 15px;
+    width: 191px;
+  }
+  @include minMedia($desk) {
+    width: 198px;
+  }
+}
+
+.franchise-btn {
+  width: 161px;
+  height: 44px;
+  @include fontButton;
+  color: $primary-color;
+  background: $secondary-color;
+  border-radius: 22px;
+  border: 0 solid;
+  &:hover,
+  &:focus {
+    background: $button-bg-color;
+    fill: currentColor;
+  }
+  @include minMedia($tab) {
+    width: 174px;
+  }
+  @include minMedia($desk) {
+    width: 180px;
+  }
+}
+
+.location-vector {
+  margin-left: 8px;
+  fill: none;
+  box-sizing: border-box;
+  @include minMedia($tab) {
+    margin-left: 13px;
+  }
+}
+
+.franchise-vector {
+  margin-left: 8px;
+  fill: none;
+  stroke: #d41443;
+  box-sizing: border-box;
+  @include minMedia($tab) {
+    margin-left: 13px;
+  }
+}

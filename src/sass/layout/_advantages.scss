@@ -1,0 +1,98 @@
+.advantages {
+  background-color: $primary-bg-color;
+  padding-top: 19px;
+  padding-bottom: 49px;
+  @include minMedia($tab) {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+  @include minMedia($desk) {
+    padding-top: 73px;
+  }
+}
+.advantages-list {
+  @include minMedia($mob) {
+    display: flex;
+  }
+}
+.advantages-list__item {
+  width: 230px;
+  @include minMedia($tab) {
+    width: 180px;
+  }
+  @include minMedia($desk) {
+    width: 330px;
+  }
+}
+.advantages-list__item:not(:last-child) {
+  display: block;
+  margin-bottom: 38px;
+  @include minMedia($mob) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @include minMedia($tab) {
+    margin-right: 60px;
+  }
+  @include minMedia($desk) {
+    margin-right: 30px;
+  }
+}
+.advantages-list__point {
+  @include fontTitle($titan-one, 400, 36px, 1.14, 0.04em);
+  display: block;
+  margin-bottom: 10px;
+
+  @include minMedia($tab) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 13px;
+    text-transform: none;
+  }
+  @include minMedia($desk) {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-bottom: 15px;
+    text-transform: none;
+  }
+}
+.advantages-list__text {
+  @include fontBody($dm-sans, 700, 12px, 1.7);
+  color: $primary-text-color;
+  @include minMedia($tab) {
+    font-size: 14px;
+    line-height: 1.74;
+    letter-spacing: 0.02em;
+  }
+  @include minMedia($desk) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.advantages-list__item::before {
+  content: '';
+  display: block;
+  background-size: contain;
+  margin-bottom: 16px;
+  @include minMedia($tab) {
+    margin-bottom: 36px;
+  }
+  @include minMedia($desk) {
+    margin-bottom: 40px;
+  }
+}
+.item__milk::before {
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages/milk.svg);
+}
+.item-apple::before {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/appel.svg);
+}
+.item-candy::before {
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/advantages/candy.svg);
+}

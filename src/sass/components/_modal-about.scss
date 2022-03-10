@@ -1,0 +1,72 @@
+.modal-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 450px;
+  width: 95vw;
+  max-height: 510px;
+  max-height: 100vh;
+  overflow: scroll;
+  background-color: $primary-bg-color;
+  box-shadow: $contacts-shadow;
+  transition: transform $main-effect;
+  transform: translate(-50%, -50%) scale(1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform $main-effect;
+  }
+
+  @include maxMedia($min) {
+    position: fixed;
+    min-width: 320px;
+  }
+  @include minMedia($tab) {
+    border-radius: 10px;
+    padding: 40px;
+    // overflow: unset;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
+  }
+  @include minMedia($desk) {
+    // max-height: 568px;
+  }
+}
+
+.modal-about__title {
+  text-align: center;
+  @include fontTitle($fs: 16px, $lh: 21 / 16);
+  color: $primary-color;
+  margin-bottom: 12px;
+
+  @include minMedia($tab) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @include minMedia($desk) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+}
+.modal-about__text {
+  @include fontBody($fs: 12px, $lh: 19/ 14);
+  color: $secondary-text-color;
+  margin-bottom: 20px;
+
+  @include minMedia($tab) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+  @include minMedia($desk) {
+    line-height: calc(27 / 14);
+  }
+}
+
+.modal-about__video {
+  width: 100%;
+  max-height: 100%;
+  border: 0px;
+}

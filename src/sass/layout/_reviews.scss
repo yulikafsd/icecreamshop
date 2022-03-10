@@ -1,0 +1,213 @@
+.rewiews {
+  padding-top: 40px;
+  padding-bottom: 43px;
+
+  @include minMedia($tab) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include minMedia($desk) {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide__photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+
+  @include minMedia($tab) {
+    margin-bottom: 19px;
+  }
+
+  @include minMedia($desk) {
+    margin-bottom: 15px;
+  }
+}
+
+.swiper-slide__gradient {
+  position: relative;
+  padding: 3px 16px 6px 7px;
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  @include minMedia($mob) {
+    padding: 5px 16px 6px 7px;
+  }
+
+  @include minMedia($tab) {
+    padding: 3px 44px 6px 20px;
+  }
+
+  @include minMedia($desk) {
+    padding: 1px 35px 1px 28px;
+  }
+}
+
+.swiper-slide__post {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 50px 30px 50px;
+  width: 280px;
+  height: auto;
+  background: #fafafa;
+
+  @include minMedia($mob) {
+    width: 440px;
+  }
+
+  @include minMedia($tab) {
+    padding: 46px 36px 28px 60px;
+    width: 620px;
+  }
+
+  @include minMedia($desk) {
+    padding: 46px 54px 32px 59px;
+    width: 926px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 61px;
+    content: url(../images/rewiews/rewiews-post-icon.svg);
+
+    @include minMedia($mob) {
+      top: 27px;
+      left: 48px;
+    }
+
+    @include minMedia($tab) {
+      top: 32px;
+      left: 41px;
+    }
+    @include minMedia($desk) {
+      top: 32px;
+      left: 50px;
+    }
+  }
+}
+
+.swiper-slide__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.583;
+  text-align: center;
+  overflow: auto;
+
+  @include minMedia($mob) {
+    font-size: 13px;
+    line-height: 2.3;
+    letter-spacing: 0.04em;
+  }
+
+  @include minMedia($tab) {
+    font-size: 14px;
+    line-height: 2.142;
+  }
+
+  @include minMedia($desk) {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.swiper-slide__name {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.857;
+
+  @include minMedia($mob) {
+    font-size: 15px;
+    line-height: 1.866;
+  }
+
+  @include minMedia($tab) {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  @include minMedia($desk) {
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  &::before {
+    content: '...';
+    display: block;
+    margin-bottom: 8px;
+    @include fontTitle($ff: $dm-sans, $fs: 30px, $ls: 10px, $lh: 1);
+
+    @include minMedia($tab) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+// PAGINATION
+.swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+
+  @include minMedia($tab) {
+    margin-top: 35px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  background-color: #d9d9d9;
+  opacity: 1;
+  background-size: cover;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d31342;
+    opacity: 1;
+  }
+
+  &:first-child {
+    background-image: url(../images/rewiews/rewiews-home-gray.svg);
+    background-color: transparent;
+    background-size: cover;
+    border-radius: unset;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-image: url(../images/rewiews/rewiews-home-red.svg);
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  &:first-child {
+    background-image: url(../images/rewiews/rewiews-home-red.svg);
+    background-size: cover;
+    border-radius: unset;
+  }
+
+  &:nth-child(n + 2) {
+    background-size: cover;
+    background-color: #d31342;
+    border-radius: 50%;
+  }
+}

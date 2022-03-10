@@ -1,0 +1,129 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close" data-modal-close>
+      <svg class="modal__icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Billing Address</p>
+    <form method="post" action="#">
+      <div class="form modal_form">
+        <label class="form__label" for="user-name">Full Name</label>
+        <div class="form__wrap">
+          <input
+            type="text"
+            class="form__input"
+            name="user-name"
+            required
+            minlength="2"
+            id="user-name"
+            placeholder="Bruce Wayne"
+          />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form modal_form">
+        <label class="form__label" for="user-tel">Phone</label>
+        <div class="form__wrap">
+          <input
+            type="tel"
+            class="form__input"
+            name="user-tel"
+            required
+            title="+1 718 111 111"
+            id="user-tel"
+            placeholder="+1 111 111 111"
+          />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form modal_form">
+        <label class="form__label" for="user-email">Email</label>
+        <div class="form__wrap">
+          <input
+            type="email"
+            class="form__input"
+            name="user-email"
+            id="user-email"
+            title="text@mail"
+            placeholder="batman@mail"
+          />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form modal_form">
+        <label class="form__label" for="user-city">City</label>
+        <div class="form__wrap">
+          <input
+            type="text"
+            class="form__input"
+            name="user-city"
+            required
+            minlength="2"
+            id="user-city"
+            placeholder="New York"
+          />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-city"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form modal_form">
+        <label class="form__label" for="user-address">Address</label>
+        <div class="form__wrap">
+          <input
+            type="text"
+            class="form__input"
+            name="user-address"
+            required
+            minlength="2"
+            id="user-address"
+            placeholder="Park Avenu 10"
+          />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-location"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form-comment">
+        <label class="form-comment__label" for="user-text">Comment</label>
+        <textarea
+          class="form-comment__text"
+          name="user-text"
+          id="user-text"
+          placeholder="Add text"
+        ></textarea>
+      </div>
+
+      <div class="form">
+        <input
+          class="form__policy-check visually-hidden"
+          type="checkbox"
+          name="policy"
+          id="policy"
+          value="signed"
+        />
+        <label class="form__check-text" for="policy">
+          <span class="form__check-icon">
+            <svg class="form__policy-icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <span class="check-label-text"> Shipping address same as bilding </span>
+        </label>
+      </div>
+
+      <button type="submit" class="form__button button">Send</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+// Кнопка - осталось просто задать ширину для стилей кнопки в своей секции
+
+.button {
+  display: block;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: $primary-color;
+  background-color: $secondary-color;
+  border: transparent;
+  border-radius: $button-border-radius;
+
+  @include fontButton;
+  text-align: center;
+
+  transition: background-color $main-effect;
+
+  &:hover,
+  &:focus {
+    background-color: $button-bg-color;
+  }
+}
+
+.button--red {
+  display: block;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: $secondary-color;
+  background-color: $primary-color;
+  border: transparent;
+  border-radius: $button-border-radius;
+
+  @include fontButton;
+  text-align: center;
+}

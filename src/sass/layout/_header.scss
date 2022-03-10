@@ -1,0 +1,125 @@
+.header {
+  // background-color: $primary-accent-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 6px;
+  z-index: 1;
+  @include minMedia($tab) {
+    padding-top: 38px;
+  }
+}
+
+.header .header__container {
+  // outline: 1px solid orange;
+  @include centeredFlex($just: space-between);
+
+  @include minMedia($desk) {
+    padding-left: 6px;
+  }
+}
+
+.header__nav {
+  display: block;
+  text-align: center;
+  @include minMedia($tab) {
+    @include centeredFlex();
+  }
+}
+
+.header-logo__box {
+  @include centeredFlex();
+}
+
+.header-logo__icon {
+  width: 50px;
+  height: 50px;
+  fill: $primary-color;
+}
+
+.header-logo__text {
+  margin-left: 20px;
+  text-align: center;
+  @include fontTitle($fs: 30px, $lh: 34 / 30);
+}
+
+.header-logo__box .header-logo__icon {
+  &:hover,
+  &:focus {
+    animation: coin 5s infinite;
+  }
+}
+
+.animate__flip {
+  animation-duration: 2000ms;
+  animation-name: flip;
+  animation-delay: 100ms;
+}
+
+.header__list {
+  display: none;
+  @include minMedia($desk) {
+    margin-left: 110px;
+    @include centeredFlex();
+  }
+}
+.header__item:not(:first-child) {
+  margin-left: 35px;
+}
+
+.header__link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  @include fontButton();
+  color: $secondary-color;
+  transition: color $main-effect;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.burger {
+  background-color: inherit;
+  border: none;
+  width: 20px;
+  height: 12px;
+}
+.burger__header {
+  margin-left: auto;
+  margin-right: 0;
+  @include minMedia($desk) {
+    display: none;
+  }
+}
+.menu-icon {
+  stroke: $primary-color;
+  transition: stroke $main-effect;
+  transform: scale(1);
+  &:hover,
+  &:focus {
+    // stroke: #e17992;
+    transform: scale(1.2);
+  }
+}
+.promo-button__header {
+  display: none;
+  @include minMedia($tab) {
+    display: block;
+    min-width: 159px;
+    padding: 0 37px;
+    margin-right: 0;
+    margin-left: 30px;
+  }
+}
+
+.promo-button__icon {
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+  fill: none;
+  stroke: $primary-color;
+}

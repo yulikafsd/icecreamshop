@@ -1,0 +1,37 @@
+#button {
+  display: inline-block;
+  background-color: $primary-color;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  // opacity: 0;
+  // visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+  z-index: 90;
+  transform: rotate(90deg);
+}
+#button::after {
+  content: '<';
+  font-family: $dm-sans;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: $primary-accent-color;
+}
+#button:active {
+  background-color: $secondary-accent-color;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

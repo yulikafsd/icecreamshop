@@ -1,0 +1,309 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @include minMedia($tab) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @include minMedia($desk) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+.products__pre-title {
+  @include fontPretitle;
+  text-align: center;
+  margin-bottom: 15px;
+  @include minMedia($tab) {
+    @include fontPretitle($fs: 26px, $lh: 30 / 26);
+  }
+  @include minMedia($desk) {
+    @include fontPretitle($fs: 30px, $lh: 34 / 30);
+  }
+}
+.products__title {
+  @include fontTitle;
+  text-align: center;
+  margin-bottom: 144px;
+  @include minMedia($tab) {
+    @include fontTitle($fs: 48px, $lh: 55 / 48);
+    margin-bottom: 150px;
+  }
+  @include minMedia($desk) {
+    @include fontTitle($fs: 58px, $lh: 66 / 58);
+    margin-bottom: 259px;
+  }
+}
+.products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include minMedia($tab) {
+    flex-direction: row;
+    margin: calc(-1 * 20px / 2);
+    align-items: flex-start;
+  }
+  @include minMedia($desk) {
+    justify-content: center;
+    margin: calc(-1 * 24px / 2);
+  }
+}
+.products-list__item {
+  position: relative;
+  padding-top: 161px;
+  padding-bottom: 41px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: $primary-accent-color;
+  border-radius: 24px;
+
+  @include maxMedia($preTab) {
+    width: 280px;
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
+  @include minMedia($tab) {
+    padding-bottom: 40px;
+    padding-top: 152px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: calc(20px / 2);
+  }
+  @include minMedia($desk) {
+    padding-bottom: 50px;
+    padding-top: 163px;
+    padding-left: 44px;
+    padding-right: 44px;
+    margin: calc(24px / 2);
+  }
+  &:nth-child(2) {
+    background-color: $product2-bg-color;
+  }
+  &:nth-child(3) {
+    background-color: $product3-bg-color;
+  }
+}
+.products-list__item::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: -113px;
+  display: block;
+  width: 249px;
+  height: 252px;
+  @include minMedia($tab) {
+    display: block;
+    width: 220px;
+    height: 226px;
+    top: -102px;
+    left: 0px;
+    right: 0px;
+  }
+  @include minMedia($desk) {
+    display: block;
+    width: 335px;
+    height: 335px;
+    top: -210px;
+    left: -3px;
+    right: -3px;
+  }
+}
+
+.products-list__item:nth-child(1) {
+  &::before {
+    background-image: url(/images/products/product-1-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/products/product-1-2x.png);
+    }
+    @include minMedia($tab) {
+      background-image: url(/images/products/product-1-tab-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/images/products/product-1-tab-2x.png);
+      }
+    }
+    @include minMedia($desk) {
+      background-image: url(/images/products/product-1-desk-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/images/products/product-1-desk-2x.png);
+      }
+    }
+  }
+}
+.products-list__item:nth-child(2) {
+  &::before {
+    background-image: url(/images/products/product-2-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/products/product-2-2x.png);
+    }
+    @include minMedia($tab) {
+      background-image: url(/images/products/product-2-tab-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/images/products/product-2-tab-2x.png);
+      }
+    }
+    @include minMedia($desk) {
+      background-image: url(/images/products/product-2-desk-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/images/products/product-2-desk-2x.png);
+      }
+    }
+  }
+}
+.products-list__item:nth-child(3) {
+  &::before {
+    background-image: url(/images/products/product-3-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/products/product-3-2x.png);
+    }
+    @include minMedia($tab) {
+      background-image: url(/images/products/product-3-tab-1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/images/products/product-3-tab-2x.png);
+      }
+    }
+    @include minMedia($desk) {
+      background-image: url(/images/products/product-3-desk-1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/images/products/product-3-desk-2x.png);
+      }
+    }
+  }
+}
+.products-list__name {
+  margin-bottom: 30px;
+  @include minMedia($desk) {
+    margin-bottom: 32px;
+    @include fontTitle($fs: 30px, $lh: 34 / 30);
+    color: $secondary-color;
+  }
+  @include fontTitle($fs: 20px, $lh: 23 / 20);
+  text-align: center;
+  color: $secondary-color;
+  &::after {
+    content: '...';
+    display: block;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    @include minMedia($desk) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.products-list__name::after:not(:last-child) {
+  margin-right: 4px;
+}
+.products-list__discription {
+  @include fontBody($fw: 700, $fs: 14px, $lh: 1.5);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $secondary-color;
+  @include minMedia($tab) {
+    @include fontBody($fw: 700, $fs: 14px, $lh: 1.8);
+  }
+  @include minMedia($desk) {
+    @include fontBody($fw: 700, $fs: 16px, $lh: 1.7);
+  }
+}
+// Alternative way to put arrow-right img, but without an ability to open additional text area
+
+// .products-list__discription::after {
+//   content: '';
+//   background-image: url(/images/products/arrow-right.png);
+//   display: block;
+//   margin-left: 50%;
+//   transform: translateX(-50%);
+//   width: 40px;
+//   height: 40px;
+//   margin-top: 30px;
+//   @include minMedia($tab) {
+//     margin-top: 40px;
+//   }
+//   @include minMedia($desk) {
+//     margin-top: 62px;
+//   }
+// }
+.prod-icecream,
+.prod-icecoffee,
+.prod-milkshakes {
+  display: none;
+  max-width: 200px;
+  @include minMedia($tab) {
+    max-width: 198px;
+  }
+  @include minMedia($tab) {
+    max-width: 241px;
+  }
+}
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  color: $primary-color;
+  cursor: pointer;
+  transition: background-color $gallery-effect, color $gallery-effect, transform $gallery-effect;
+}
+.products .arrow-right {
+  width: 11px;
+  height: 10px;
+  fill: currentColor;
+}
+.read-icecream,
+.read-icecoffee,
+.read-milkshakes {
+  margin: 0 auto;
+  margin-top: 30px;
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    color: $secondary-color;
+    transform: scale(1.1) rotate(90deg);
+  }
+  @include minMedia($tab) {
+    margin-top: 40px;
+  }
+  @include minMedia($desk) {
+    margin-top: 62px;
+  }
+}
+#read-icecream:checked,
+#read-icecoffee:checked,
+#read-milkshakes:checked {
+  & ~ .read-icecream,
+  & ~ .read-icecoffee,
+  & ~ .read-milkshakes {
+    &:hover,
+    &:focus {
+      background-color: $primary-color;
+      transform: scale(1.1) rotate(-90deg);
+    }
+  }
+}
+#read-icecream:checked,
+#read-icecoffee:checked,
+#read-milkshakes:checked {
+  & ~ .prod-icecream,
+  & ~ .prod-icecoffee,
+  & ~ .prod-milkshakes {
+    display: block;
+    margin-top: 30px;
+  }
+}
