@@ -11,7 +11,7 @@
   @include minMedia($desk) {
     padding-top: 66px;
     padding-bottom: 83px;
-    background-image: url(../images/sectionbg2-1x.png),
+    background-image: url(../images/contacts/sectionbg2-1x.webp),
       linear-gradient(#ffffff 168px, #fff5f6 168px, #fff5f6 851px);
     flex-grow: 1;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     background-size: contain;
     background-position-y: 168px, 0;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/sectionbg2-2x.png),
+      background-image: url(../images/contacts/sectionbg2-2x.webp),
         linear-gradient(#ffffff 168px, #fff5f6 168px, #fff5f6 851px);
     }
   }
