@@ -158,16 +158,12 @@
     background-image: url(/images/products/product-3-1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
-      (min-resolution: 2dppx),
-      (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(/images/products/product-3-2x.webp);
     }
     @include minMedia($tab) {
       background-image: url(/images/products/product-3-tab-1x.webp);
       @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(/images/products/product-3-tab-2x.webp);
@@ -176,8 +172,6 @@
     @include minMedia($desk) {
       background-image: url(/images/products/product-3-desk-1x.webp);
       @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(/images/products/product-3-desk-2x.webp);
