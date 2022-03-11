@@ -115,60 +115,60 @@
 
 .products-list__item:nth-child(1) {
   &::before {
-    background-image: url(/images/products/product-1-1x.png);
+    background-image: url(/images/products/product-1-1x.webp);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/products/product-1-2x.png);
+      background-image: url(/images/products/product-1-2x.webp);
     }
     @include minMedia($tab) {
-      background-image: url(/images/products/product-1-tab-1x.png);
+      background-image: url(/images/products/product-1-tab-1x.webp);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/products/product-1-tab-2x.png);
+        background-image: url(/images/products/product-1-tab-2x.webp);
       }
     }
     @include minMedia($desk) {
-      background-image: url(/images/products/product-1-desk-1x.png);
+      background-image: url(/images/products/product-1-desk-1x.webp);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/products/product-1-desk-2x.png);
+        background-image: url(/images/products/product-1-desk-2x.webp);
       }
     }
   }
 }
 .products-list__item:nth-child(2) {
   &::before {
-    background-image: url(/images/products/product-2-1x.png);
+    background-image: url(/images/products/product-2-1x.webp);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/products/product-2-2x.png);
+      background-image: url(/images/products/product-2-2x.webp);
     }
     @include minMedia($tab) {
-      background-image: url(/images/products/product-2-tab-1x.png);
+      background-image: url(/images/products/product-2-tab-1x.webp);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/products/product-2-tab-2x.png);
+        background-image: url(/images/products/product-2-tab-2x.webp);
       }
     }
     @include minMedia($desk) {
-      background-image: url(/images/products/product-2-desk-1x.png);
+      background-image: url(/images/products/product-2-desk-1x.webp);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/products/product-2-desk-2x.png);
+        background-image: url(/images/products/product-2-desk-2x.webp);
       }
     }
   }
 }
 .products-list__item:nth-child(3) {
   &::before {
-    background-image: url(/images/products/product-3-1x.png);
+    background-image: url(/images/products/product-3-1x.webp);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/products/product-3-2x.png);
+      background-image: url(/images/products/product-3-2x.webp);
     }
     @include minMedia($tab) {
-      background-image: url(/images/products/product-3-tab-1x.png);
+      background-image: url(/images/products/product-3-tab-1x.webp);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/products/product-3-tab-2x.png);
+        background-image: url(/images/products/product-3-tab-2x.webp);
       }
     }
     @include minMedia($desk) {
-      background-image: url(/images/products/product-3-desk-1x.png);
+      background-image: url(/images/products/product-3-desk-1x.webp);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(/images/products/product-3-desk-2x.png);
+        background-image: url(/images/products/product-3-desk-2x.webp);
       }
     }
   }
@@ -212,7 +212,7 @@
 
 // .products-list__discription::after {
 //   content: '';
-//   background-image: url(/images/products/arrow-right.png);
+//   background-image: url(/images/products/arrow-right.webp);
 //   display: block;
 //   margin-left: 50%;
 //   transform: translateX(-50%);

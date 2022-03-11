@@ -3,14 +3,14 @@
   background-color: $primary-bg-color;
   padding-top: 139px;
   padding-bottom: 39px;
-  background-image: url(../images/about/milk-right-tel-1x.png),
-    url(../images/about/milk-left-tel-1x.png);
+  background-image: url(../images/about/milk-right-tel-1x.webp),
+    url(../images/about/milk-left-tel-1x.webp);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 100% 84%, 0 84%;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/about/milk-right-tel-2x.png),
-      url(../images/about/milk-left-tel-2x.png);
+    background-image: url(../images/about/milk-right-tel-2x.webp),
+      url(../images/about/milk-left-tel-2x.webp);
   }
 
   @include rangeMedia($tab, $preDesk) {
@@ -22,14 +22,14 @@
   @include minMedia($desk) {
     padding-top: 125px;
     padding-bottom: 35px;
-    background-image: url(../images/about/milk-right-desk-1x.png),
-      url(../images/about/milk-left-desk-1x.png);
+    background-image: url(../images/about/milk-right-desk-1x.webp),
+      url(../images/about/milk-left-desk-1x.webp);
     background-size: 550px;
     background-repeat: no-repeat;
     background-position: 100% 100%, 0 90%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about/milk-right-desk-2x.png),
-        url(../images/about/milk-left-desk-2x.png);
+      background-image: url(../images/about/milk-right-desk-2x.webp),
+        url(../images/about/milk-left-desk-2x.webp);
     }
   }
 }
