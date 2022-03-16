@@ -153,6 +153,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+  transition: $main-effect;
 
   @include minMedia($tab) {
     font-size: 14px;

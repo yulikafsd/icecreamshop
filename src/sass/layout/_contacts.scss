@@ -51,6 +51,13 @@
   padding: 43px 20px;
   margin-left: auto;
   margin-right: auto;
+  transition: 250ms ease-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
   @include minMedia($tab) {
     width: calc(100% / 3 - 20px);
     padding: 50px 31px;
@@ -254,6 +261,7 @@
   background: $secondary-color;
   border-radius: 22px;
   border: 0 solid;
+
   &:hover,
   &:focus {
     background: $button-bg-color;
