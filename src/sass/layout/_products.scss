@@ -56,6 +56,27 @@
   padding-right: 40px;
   background-color: $primary-accent-color;
   border-radius: 24px;
+  transition: $main-effect;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 15px 10px rgba(255, 184, 202, 0.55);
+    transform: scale(1.1);
+  }
+
+  &:nth-child(2) {
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 15px 10px rgba(240, 209, 165, 0.55);
+    }
+  }
+
+  &:last-child {
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 15px 10px rgba(194, 226, 151, 0.55);
+    }
+  }
 
   @include maxMedia($preTab) {
     width: 280px;
@@ -231,6 +252,7 @@
 .prod-milkshakes {
   display: none;
   max-width: 200px;
+
   @include minMedia($tab) {
     max-width: 198px;
   }
